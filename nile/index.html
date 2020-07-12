@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/8913a5c2b2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NILE ETHIOPIAN RESTAURANT</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+
+    <!--*************************************************************** Navigation *********************************************************-->
+    <header>
+        <nav class="topnav">
+            <label class="logo">
+                <strong id="p01"><span style="color: #3A801D;">NILE</span>
+                    <span style="color: #FCE44C;">ETHIOPIAN</span>
+                    <span style="color: #ED3833;">RESTAURANT</span></strong>
+            </label>
+            <i class="fa fa-bars icon" onclick="document.getElementById('myFinder').classList.toggle('noDrop');"></i>
+            <ul class="noDrop" id="myFinder">
+                <li><a href="#">Home</a></li>
+                <li><a href="#c1">Featured items</a></li>
+                <li class="firstmenu"><a href="#c2">Menu</a></li>
+                <li class="secondmenu"><a href="#c5">Menu</a></li>
+                <li><a href="#c3">Contact Us</a></li>
+                <li><a href="#c4">Order Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--************************************************************* End Navigation *******************************************************-->
+
+
+    <!--************************************************************** Image Gallery *******************************************************-->
+    <div class="slideshowContainer">
+        <img class="imageSlides" src="images/nile1.png" alt="veggie & doro wot with injera">
+        <img class="imageSlides" src="images/nile2.png" alt="veggie & doro wot">
+        <img class="imageSlides" src="images/nile3.png" alt="awaze tibs">
+        <img class="imageSlides" src="images/nile4.png" alt="close up of doro wot">
+        <span id="leftArrow" class="slideshowArrow">&#8249;</span>
+        <span id="rightArrow" class="slideshowArrow">&#8250;</span>
+        <div class="slideshowCircles">
+            <span class="circle dot"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+        </div>
+    </div>
+
+    <!--************************************************************ End Image Gallery *******************************************************-->
+
+
+    <!--************************************************************ Featured Items **********************************************************-->
+    <div class="contain" id="c1">
+        <div class="menu-div">
+            <h1 class="nav-link2"><a href="#c1">Featured Items</a></h1>
+            <div class="menu-div2 justify-content-between w-100">
+                <div class="menu-div3">
+                    <figure>
+                        <img src="images/nile5.png" alt="Special Kitfo" class="img-fluid zoom">
+                    </figure><br>
+                    <h2 class="nav-link"><a href="#c1">Kitfo</a></h2>
+                </div>
+                <div class="menu-div4">
+                    <figure>
+                        <img src="images/nile6.png" alt="vegitarian combo" class="img-fluid zoom">
+                    </figure><br>
+                    <h2 class="nav-link"><a href="#c1">Vegetarian combo </a></h2>
+                </div>
+                <div class="menu-div5">
+                    <figure>
+                        <img src="images/nile7.png" alt="Awaze tibs" class="img-fluid zoom">
+                    </figure><br>
+                    <h2 class="nav-link"><a href="#">Awaze Tibs</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--************************************************************  End Featured Items ******************************************************-->
+
+
+    <!--*****************************************************************  Menu Desktop ***************************************************************-->
+    <div class="contain2" id="c2">
+        <h1>Menu</h1><br>
+        <div class="menu-div6">
+            <h2>Appetizers</h2><br>
+            <h3>Veggie Sambusa 1.25each</h3>
+            <p>A pastry shell filled with lentils, onions, green peppers and herbs.</p><br>
+            <h3>Chechebsa 5.59 </h3>
+            <p>Unleavened Ethiopian homemade pita bread mixed with spiced butter, (olive oil
+                for vegan) honey, and berbere.</p><br><br>
+            <hr><br>
+            <!-- SALADS -->
+            <h2>SALADS</h2><br>
+            <h3>Nile's salad 3.99</h3>
+            <p>Fresh tomatoes, lettuce, onion and green pepper or jalapeños tossed with house
+                dressing.</p><br>
+            <h3>Spicy salad 4.99</h3>
+            <p>Fresh tomato, lettuce, onion, green pepper, jalapeño, carrot, and mitmita(chilli)
+                tossed with house dressing.</p><br><br>
+            <hr><br>
+            <!-- VEGAN DISHES-->
+            <h2>VEGAN DISHES የፆም</h2><br>
+            <p>Pick your Injera type Regular Injera=mixture of teff and barley flour. Teff Injera= 100% teff
+                gluten-free additional $1.50</p><br>
+            <h3>Misir wot ክክ ምስር 9 .99</h3>
+            <p>Split lentils cooked with tomato, onion, garlic with berbere.</p><br>
+            <h3>Green lentils ድፍን ምስር 8.99</h3>
+            <p>Whole lentils cooked with onion, garlic, and ginger.</p><br>
+            <h3>Split peas ክክ አልጫ 8.99</h3>
+            <p>Yellow split peas cooked with onion, garlic, ginger, and jalapeño.</p><br>
+            <h3>Collard green ጎመን 8.99</h3>
+            <p>Chopped collard greens cooked with onion, garlic, and jalapeño.</p><br>
+            <h3>Alicha dinich ድንች ወጥ 7.49</h3>
+            <p> Potato, carrot, onion, ginger stew, with turmeric sauce.</p><br>
+            <h3>Green cabbage ጥቅል ጎመን 8.49</h3>
+            <p> Cabbage simmered in mild sauce with garlic, ginger, and onion.</p><br>
+            <h3>Shiro ሽሮ 10.99</h3>
+            <p>Spiced chick-pie flour cooked with berbere, onion, tomato, and jalapeño. served with
+                side of salad.</p><br>
+            <h3>Roasted beetroot ቀይስር 10.99</h3>
+            <p>Beets roasted with carrot, potato, onion, garlic, and rosemary with your choice of two sides of
+                veggies.
+            </p><br>
+            <h3>Green beans ፎሶልያ 10.99</h3>
+            <p>Green beans roasted with carrot, potato, garlic, and onion with your choice of two sides of veggies.
+            </p>
+            <br>
+            <h3>Vegetarian combo በያይነት 11.99</h3>
+            <p>A combination of eight veggies Misir wot, Split peas, Shiro Green lentils, Collard greens, Cabbage,
+                Alicha Dinich, and Beets.</p><br>
+            <h3>Firfir special 10.99</h3>
+            <p>Cooked onion, tomato, garlic, and berbere sauce sautéed with injera served with
+                rice and cabbage.</p><br>
+            <h3>Fish Lebleb 11.99</h3>
+            <p>Fillets of tilapia sautéed withonion, tomato, garlic, and jalapeño. Served with
+                cabbage on side.</p><br>
+            <h3>Fish wot 10.99</h3>
+            <p>Fish stew cooked in onion, garlic and red awaze pepper sauce. Served with cabbage on
+                side.</p><br>
+            <hr><br>
+            <!-- COMBINATIONS -->
+            <h2 id="combinations">COMBINATIONS</h2><br><br>
+            <h3>Lamb tibs combo 13.99 </h3>
+            <p>Lamb tibs with your choice of two vegetarian dishes from Misir wot, Split peas,
+                Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.</p><br>
+            <h3>Beef tibs combo 12.99</h3>
+            <p>Beef tibs with your choice of two vegetarian dishes from Misir wot, Split
+                peas, Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.</p><br>
+            <h3>Meat combination 14.99</h3>
+            <p>Combination of doro wot, beef tibs, lamb wot, collard green, alicha dinich,
+                and ayib(Et hiopian cheese).</p><br>
+            <h3>Chicken tibs combo 12.99</h3>
+            <p>Chicken tibs with your choice of two vegetarian dishes from Misir wot,
+                Split peas, Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.</p><br>
+            <h3>Doro wot combo 12.99</h3>
+            <p> Ethiopian traditional chicken stew with your choice of two vegetarian dishes
+                from Misir wot, Split peas, Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.
+            </p>
+            <br><br>
+            <hr><br>
+            <!-- ETHIOPIAN NILE’S SPECIAL SANDWICHES -->
+            <h2 id="ethiopian">ETHIOPIAN NILE’S SPECIAL SANDWICHES</h2><br>
+            <h3>Tibs sandwich (beef or chicken) 7.99</h3>
+            <p>Cubed tender beef fried with tomato, onion, rosemary, jalapeño, butter,
+                topped with mayonnaise, fresh lettuce tomato and cheese. Eight-inch hoagie bread.</p>
+            <h3>Ambasha sandwich (Ethiopian bread) 7.99</h3>
+            <p>Beef or chicken sautéed in onion, jalapeño, and tomato with lettuce
+                and mayonnaise.</p>
+        </div>
+        <div class="menu-div7">
+            <h2>LAMB DISHES</h2><br>
+            <p>Comes with injera and your choice of veggie cabbage or lentils.
+                Pick your Injera type Regular Injera=mixture of teff and barley flour. Teff Injera= 100% teff
+                gluten-free additional $1.50</p><br>
+            <h3>Yebeg derek tibs የበግ ደረቅ ጥብስ 14.99</h3>
+            <p>Cubed tender lamb fried with onion, rosemary, and jalapeño served
+                with spicy awaze sauce.</p><br>
+            <h3>Tibs ጥብስ 13.99</h3>
+            <p>Cubed pieces of marinated lamb sautéed in onion, jalapeño, tomato, and spiced
+                butter.</p><br>
+            <h3>Yebeg alicha የበግ አልጫ 12.99</h3>
+            <p>Savory lamb cooked in a mildly spiced turmeric sauce with onion, ginger
+                and garlic.</p><br>
+            <h3>Lamb wot የበግ ቀይ ወጥ 12.99</h3>
+            <p>Freshly made lamb stew cooked with onions and red pepper sauce.</p><br><br><br><br>
+            <hr><br>
+            <!-- BEEF DISHES -->
+            <h2>BEEF DISHES</h2><br>
+            <p>Comes with injera and your chioice of veggie cabbage or lentils.</p><br>
+            <h3>Derek/shekla tibs ደረቅ ጥብስ 13.99</h3>
+            <p>Cubed tender beef fried with onion, rosemary, jalapeño served with spicy
+                awaze sauce.</p><br>
+            <h3>Tibs ጥብስ 12.99</h3>
+            <p>Cubed pieces of marinated beef sautéed in onion, jalapeño, tomato, and spiced
+                butter.</p><br>
+            <h3>Beef wot የበሬ ቀይ ወጥ 11.99</h3>
+            <p>Freshly made beef stew cooked with onions and red pepper sauce.</p><br>
+            <h3>Gomen besiga ጎመን በስጋ 10.99</h3>
+            <p>Chopped collard greens cooked with onion, garlic and cubed meat spiced
+                and purified with Ethiopian butter.</p><br>
+            <h3>Awaze tibs አዋዜ ጥብስ 12.99</h3>
+            <p>Cubed tender beef sautéed with onion, tomato, jalapeño, and awaze
+                sauce.</p><br>
+            <h3>Kitfo ክትፎ 12.99</h3>
+            <p>(Ethiopian steak tartar) Freshly ground, very lean beef mixed with mitmita,
+                cardamom, and butter cooked in raw, medium, or well done. served with Ethiopian cheese on side.</p>
+            <br>
+            <h3>Minchet ምንቸት 10.99</h3>
+            <p> Finely chopped lean ground beef cooked in minced, onion, ginger, and garlic.
+                served with cottage cheese on side.</p><br><br>
+            <hr><br><br>
+            <!-- CHICKEN DISHES -->
+            <h2>CHICKEN DISHES</h2><br><br>
+            <h3>Derek Chicken tibs የዶሮ ጥብስ 11.99</h3>
+            <p>Boneless pieces of chicken breast seasoned and sautéed with, onion,
+                jalapeño, tomatoe, and garlic.</p><br>
+            <h3>Chicken tibs 10.99</h3>
+            <p> Boneless pieces of chicken breast cooked in onions and red pepper sauce.</p><br>
+            <h3>Doro wot ዶሮ ወጥ 12.99</h3>
+            <p>Traditional dish chicken drumsticks stew simmered in berbere red pepper sauce
+                with garlic, tomato, and onion. served with Ethiopian cheese on side.</p><br><br>
+            <hr><br><br>
+            <!-- DESSERT -->
+            <h2>DESSERT</h2>
+            <div class="contain4">
+                <h3>Baklava 3.29</h3><br>
+            </div>
+            <div class="contain5">
+                <h3>Tiramisu 4.59</h3><br>
+            </div>
+            <hr><br><br>
+            <!-- BEVERAGES -->
+            <h2>BEVERAGES</h2><br>
+            <div class="contain4">
+                <h3>BOTTLE DRINKS</h3><br>
+                <p>Fanta & Coke 1.99</p>
+                <p>Perrier 1.99</p>
+                <p>Bottled water 1.00</p><br>
+            </div>
+            <div class="contain5">
+                <h3>CAN DRINKS</h3><br>
+                <p>Sprite 1.29</p>
+                <p>Coke 1.29</p>
+                <p>Diet Coke 1.29</p>
+                <p>Pepsi 1.29</p>
+                <p>Ginger ale 1.29</p><br>
+            </div>
+            <hr><br>
+            <!-- ETHIOPIAN BEER & WINES -->
+            <div class="contain4">
+                <h3>ETHIOPIAN BEER</h3><br>
+                <p>St. George 4.50</p>
+                <p>Meta Premium 4.50</p><br>
+            </div>
+            <div class="contain5">
+                <h3>WINES</h3><br>
+                <p>Moscato 3.49</p>
+                <p>Chardonnay 3.49</p>
+                <p>Pinot Grigio 3.49</p>
+                <p>Merlot 3.49</p><br>
+            </div>
+            <hr><br>
+            <!-- HOT DRINKS & SMOOTHIES -->
+            <div class="contain4">
+                <h3>HOT DRINKS</h3><br>
+                <p>Coffee 2.00</p>
+                <p>Tea(Ethiopian herb tea) 1.69</p>
+            </div>
+            <div class="contain5">
+                <h3>SMOOTHIES</h3><br>
+                <p>Mango 3.49</p>
+                <p>Pineapple 3.49</p>
+                <p>Strawberry Banana 3.49</p>
+                <p>Mango Strawberry 3.49</p>
+                <p>Mango Pineapple 3.49</p>
+            </div>
+        </div>
+    </div>
+
+    <!--**************************************************************** End Menu Desktop ***********************************************************-->
+
+
+    <!--*****************************************************************  Menu Mobile ***************************************************************-->
+    <div class="title" id="c5">
+        <h1>Menu</h1>
+    </div>
+    <section id="box">
+        <div class="horizontal-scroll-wrapper rectangles">
+            <div><br>
+                <h2>Appetizers</h2><br>
+                <h3>Veggie Sambusa 1.25each</h3>
+                <p>A pastry shell filled with lentils, onions, green peppers and herbs.</p>
+                <i class="fa fa-arrow-right right-paddle" aria-hidden="true"></i><br><br>
+                <h3>Chechebsa 5.59 </h3>
+                <p>Unleavened Ethiopian homemade pita bread mixed with spiced butter, (olive oil
+                    for vegan) honey, and berbere.</p>
+            </div>
+            <div><br>
+                <!-- SALADS -->
+                <h2>SALADS</h2><br>
+                <h3>Nile's salad 3.99</h3>
+                <p>Fresh tomatoes, lettuce, onion and green pepper or jalapeños tossed with house
+                    dressing.</p><br><br>
+                <h3>Spicy salad 4.99</h3>
+                <p>Fresh tomato, lettuce, onion, green pepper, jalapeño, carrot, and mitmita(chilli)
+                    tossed with house dressing.</p>
+            </div>
+            <div><br>
+                <!-- VEGAN DISHES-->
+                <h3>VEGAN DISHES</h3>
+                <p>Pick your Injera type Regular Injera=mixture of teff and barley flour. Teff Injera= 100% teff
+                    gluten-free additional $1.50</p><br><br>
+                <h3>Misir wot 9.99</h3>
+                <p>Split lentils cooked with tomato, onion, garlic with berbere.</p><br><br>
+                <h3>Green lentils 8.99</h3>
+                <p>Whole lentils cooked with onion, garlic, and ginger.</p>
+            </div>
+            <div><br>
+                <h3>Split peas 8.99</h3>
+                <p>Yellow split peas cooked with onion, garlic, ginger, and jalapeño.</p><br><br><br>
+                <h3>Collard green 8.99</h3>
+                <p>Chopped collard greens cooked with onion, garlic, and jalapeño.</p><br><br><br>
+                <h3>Alicha dinich 7.49</h3>
+                <p> Potato, carrot, onion, ginger stew, with turmeric sauce.</p>
+            </div>
+            <div><br>
+                <h3>Green cabbage 8.49</h3>
+                <p> Cabbage simmered in mild sauce with garlic, ginger, and onion.</p><br>
+                <h3>Shiro 10.99</h3>
+                <p>Spiced chick-pie flour cooked with berbere, onion, tomato, and jalapeño. served with
+                    side of salad.</p><br>
+                <h3>Roasted beetroot 10.99</h3>
+                <p>Beets roasted with carrot, potato, onion, garlic, and rosemary with your choice of two sides of
+                    veggies.
+                </p>
+            </div>
+            <div><br><br>
+                <h3>Green beans 10.99</h3>
+                <p>Green beans roasted with carrot, potato, garlic, and onion with your choice of two sides of veggies.
+                </p><br><br>
+                <h3>Vegetarian combo 11.99</h3>
+                <p>A combination of eight veggies Misir wot, Split peas, Shiro Green lentils, Collard greens, Cabbage,
+                    Alicha Dinich, and Beets.</p>
+            </div>
+            <div><br>
+                <h3>Firfir special 10.99</h3>
+                <p>Cooked onion, tomato, garlic, and berbere sauce sautéed with injera served with
+                    rice and cabbage.</p><br>
+                <h3>Fish Lebleb 11.99</h3>
+                <p>Fillets of tilapia sautéed withonion, tomato, garlic, and jalapeño. Served with
+                    cabbage on side.</p><br>
+                <h3>Fish wot 10.99</h3>
+                <p>Fish stew cooked in onion, garlic and red awaze pepper sauce. Served with cabbage on
+                    side.</p>
+            </div>
+            <div>
+                <!-- COMBINATIONS -->
+                <h2 id="combinations">COMBINATIONS</h2><br>
+                <h3>Lamb tibs combo 13.99 </h3>
+                <p>Lamb tibs with your choice of two vegetarian dishes from Misir wot, Split peas,
+                    Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.</p><br>
+                <h3>Beef tibs combo 12.99</h3>
+                <p>Beef tibs with your choice of two vegetarian dishes from Misir wot, Split
+                    peas, Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.</p>
+            </div>
+            <div><br><br>
+                <h3>Meat combination 14.99</h3>
+                <p>Combination of doro wot, beef tibs, lamb wot, collard green, alicha dinich,
+                    and ayib(Et hiopian cheese).</p><br><br>
+                <h3>Chicken tibs combo 12.99</h3>
+                <p>Chicken tibs with your choice of two vegetarian dishes from Misir wot,
+                    Split peas, Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and Beets.</p>
+            </div>
+            <div><br><br><br><br><br>
+                <h3>Doro wot combo 12.99</h3>
+                <p> Ethiopian traditional chicken stew with your choice of two vegetarian dishes
+                    from Misir wot, Split peas, Shiro Green lentils, Collard greens, Cabbage, Alicha Dinich, and
+                    Beets.
+                </p>
+            </div>
+            <div><br><br>
+                <!-- ETHIOPIAN NILE’S SPECIAL SANDWICHES -->
+                <h2 id="ethiopian">ETHIOPIAN NILE’S SPECIAL SANDWICHES</h2><br>
+                <h3>Tibs sandwich (beef or chicken) 7.99</h3>
+                <p>Cubed tender beef fried with tomato, onion, rosemary, jalapeño, butter,
+                    topped with mayonnaise, fresh lettuce tomato and cheese. Eight-inch hoagie bread.</p>
+            </div>
+            <div><br><br><br><br><br>
+                <h3>Ambasha sandwich (Ethiopian bread) 7.99</h3>
+                <p>Beef or chicken sautéed in onion, jalapeño, and tomato with lettuce
+                    and mayonnaise.</p>
+            </div>
+            <div><br><br><br>
+                <h2>LAMB DISHES</h2><br>
+                <p>Comes with injera and your choice of veggie cabbage or lentils.
+                    Pick your Injera type Regular Injera=mixture of teff and barley flour. Teff Injera= 100% teff
+                    gluten-free additional $1.50</p>
+            </div>
+            <div><br><br><br>
+                <h3>Yebeg derek tibs 14.99</h3>
+                <p>Cubed tender lamb fried with onion, rosemary, and jalapeño served
+                    with spicy awaze sauce.</p><br><br>
+                <h3>Tibs 13.99</h3>
+                <p>Cubed pieces of marinated lamb sautéed in onion, jalapeño, tomato, and spiced
+                    butter.</p>
+            </div>
+            <div><br><br><br>
+                <h3>Yebeg alicha 12.99</h3>
+                <p>Savory lamb cooked in a mildly spiced turmeric sauce with onion, ginger
+                    and garlic.</p><br><br>
+                <h3>Lamb wot 12.99</h3>
+                <p>Freshly made lamb stew cooked with onions and red pepper sauce.</p>
+            </div>
+            <div><br><br>
+                <!-- BEEF DISHES -->
+                <h2>BEEF DISHES</h2><br>
+                <p>Comes with injera and your chioice of veggie cabbage or lentils.</p><br><br>
+                <h3>Derek/shekla tibs 13.99</h3>
+                <p>Cubed tender beef fried with onion, rosemary, jalapeño served with spicy
+                    awaze sauce.</p>
+            </div>
+            <div><br><br><br>
+                <h3>Tibs 12.99</h3>
+                <p>Cubed pieces of marinated beef sautéed in onion, jalapeño, tomato, and spiced
+                    butter.</p><br><br>
+                <h3>Beef wot 11.99</h3>
+                <p>Freshly made beef stew cooked with onions and red pepper sauce.</p>
+            </div>
+            <div><br><br>
+                <h3>Gomen besiga 10.99</h3>
+                <p>Chopped collard greens cooked with onion, garlic and cubed meat spiced
+                    and purified with Ethiopian butter.</p><br><br>
+                <h3>Awaze tibs 12.99</h3>
+                <p>Cubed tender beef sautéed with onion, tomato, jalapeño, and awaze
+                    sauce.</p>
+            </div>
+            <div><br>
+                <h3>Kitfo 12.99</h3>
+                <p>(Ethiopian steak tartar) Freshly ground, very lean beef mixed with mitmita,
+                    cardamom, and butter cooked in raw, medium, or well done. served with Ethiopian cheese on side.
+                </p><br>
+                <h3>Minchet 10.99</h3>
+                <p> Finely chopped lean ground beef cooked in minced, onion, ginger, and garlic.
+                    served with cottage cheese on side.</p>
+            </div>
+            <div><br>
+                <!-- CHICKEN DISHES -->
+                <h2>CHICKEN DISHES</h2><br>
+                <h3>Derek Chicken tibs 11.99</h3>
+                <p>Boneless pieces of chicken breast seasoned and sautéed with, onion,
+                    jalapeño, tomatoe, and garlic.</p><br>
+                <h3>Chicken tibs 10.99</h3>
+                <p> Boneless pieces of chicken breast cooked in onions and red pepper sauce.</p>
+            </div>
+            <div><br><br><br><br><br>
+                <h3>Doro wot 12.99</h3>
+                <p>Traditional dish chicken drumsticks stew simmered in berbere red pepper sauce
+                    with garlic, tomato, and onion. served with Ethiopian cheese on side.</p>
+            </div>
+            <div><br>
+                <!-- DESSERT -->
+                <h2>DESSERT</h2>
+                <h3>Baklava 3.29</h3><br>
+                <h3>Tiramisu 4.59</h3><br><br>
+                <!-- BEVERAGES -->
+                <h2>BEVERAGES</h2><br>
+                <h3>BOTTLE DRINKS</h3><br>
+                <p>Fanta & Coke 1.99</p>
+                <p>Perrier 1.99</p>
+                <p>Bottled water 1.00</p>
+            </div>
+            <div><br><br><br><br>
+                <h3>CAN DRINKS</h3><br>
+                <p>Sprite 1.29</p>
+                <p>Coke 1.29</p>
+                <p>Diet Coke 1.29</p>
+                <p>Pepsi 1.29</p>
+                <p>Ginger ale 1.29</p>
+            </div>
+            <div><br><br>
+                <!-- ETHIOPIAN BEER & WINES -->
+                <h3>ETHIOPIAN BEER</h3><br>
+                <p>St. George 4.50</p>
+                <p>Meta Premium 4.50</p><br><br>
+                <h3>WINES</h3><br>
+                <p>Moscato 3.49</p>
+                <p>Chardonnay 3.49</p>
+                <p>Pinot Grigio 3.49</p>
+                <p>Merlot 3.49</p>
+            </div>
+            <div><br><br>
+                <!-- HOT DRINKS & SMOOTHIES -->
+                <h3>HOT DRINKS</h3><br>
+                <p>Coffee 2.00</p>
+                <p>Tea(Ethiopian herb tea) 1.69</p><br><br>
+                <h3>SMOOTHIES</h3><br>
+                <p>Mango 3.49</p>
+                <p>Pineapple 3.49</p>
+                <p>Strawberry Banana 3.49</p>
+                <p>Mango Strawberry 3.49</p>
+                <p>Mango Pineapple 3.49</p>
+            </div>
+        </div>
+    </section>
+
+    <!--**************************************************************** End Menu Mobile ***********************************************************-->
+
+
+    <!--**************************************************************** Parallax ***********************************************************-->
+    <main class="content js-content">
+        <section class="block section-landing">
+            <figure class="item-parallax-media">
+                <img src="images/nile8.png" alt=" image of nile restaurant" class="img-fluid" />
+            </figure>
+            <div class="item-parallax-content flex-container">
+                <div class="landing-content centered-content">
+                    <h2 class="head-large">Come To Nile</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--************************************************************* End Parallax ***********************************************************-->
+
+
+    <!--***************************************************************  Reviews *************************************************************-->
+    <div class="reviews" id="c4">
+        <div class="text-sec">
+            <h1>Order Online</h1>
+            <p>We Deliver with DoorDash BiteSquad UberEats & GrubHub</p><br><br>
+            <p><a href="https://www.doordash.com/store/nile-ethiopian-restaurant-jacksonville-281473/en-US"
+                    target="_blank"><img src="images/icon1.png" alt="doordash logo"
+                        class="img-fluid"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.bitesquad.com/food/nile-ethiopian-restaurant/26410" target="_blank"><img
+                        src="images/icon2.png" alt="bitesquad logo"
+                        class="img-fluid"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.ubereats.com/jacksonville/food-delivery/nile-ethiopian-restaurant/fvxzDD8RR56jDtRLYpJzjg"
+                    target="_blank"><img src="images/icon3.png" alt="ubereats logo"
+                        class="img-fluid"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://www.grubhub.com/restaurant/nile-ethiopian-restaurant-6715-powers-avenue-jacksonville/1556546?gclsrc=aw.ds&=undefined&gclid=Cj0KCQjwl4v4BRDaARIsAFjATPk_BrCHNEmRxtC9CU9QbDR8was_-PVCaYWbI7O1rinhSXxEfW73GrQaAnYzEALw_wcB"
+                    target="_blank"><img src="images/icon4.png" alt="grubhub logo" class="img-fluid"></a>
+            </p><br><br><br><br><br>
+            <!-- Give Us A Review -->
+            <h2>Give Us A Review</h2><br>
+            <a href="https://www.google.com/search?rlz=1C5CHFA_enUS831US831&biw=1421&bih=743&sxsrf=ALeKk03dxfwp87nBu5cKj4tHo9a97-VbMw%3A1594057793071&ei=QWQDX6DgA8Ps_Qant6HwDw&q=google+reviews+nile+ethiopian+restaurant&oq=google+reviews+&gs_lcp=CgZwc3ktYWIQARgAMgQIIxAnMgQIABBDMgIIADICCAAyAggAMgIIADICCAAyBwgAEEMQiwMyBQgAEIsDMgIIADoECAAQRzoHCAAQFBCHAjoGCAAQFhAeOggIABAWEAoQHjoECAAQClDYuQFYg8cBYK3YAWgAcAF4AIABkwGIAZYJkgEDMi44mAEAoAEBqgEHZ3dzLXdpergBAQ&sclient=psy-ab#lrd=0x88e5c9e4b01d1c05:0x81558276a01bcb12,1,,,"
+                target="_blank"><img src="images/google.png" alt="google reviews" style="height: 40px; width: 80px;"
+                    class="img-fluid"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.yelp.com/biz/nile-ethiopian-restaurant-jacksonville" target="_blank"><img
+                    src="images/yelp.png" alt="yelp review" style="height: 40px; width: 80px;" class="img-fluid"></a>
+            <br><br><br><br><br><br><br>
+            <!-- Contact Us -->
+            <h2>Contact Us</h2><br>
+            <p>Phone: (904) 731-0005</p><br>
+            <p>Address: 6715 Powers Ave #3, Jacksonville, FL 32217</p>
+        </div>
+        <div class="critic-sec">
+            <h1>What Our Customers Say About us</h1><br>
+            <span class="yelp-review" data-review-id="ps77VjeVyPgTBsmDXX5e2Q" data-hostname="www.yelp.com">Read <a
+                    href="https://www.yelp.com/user_details?userid=MBgoy6Wvz5TYrpiqjdF8tQ" rel="nofollow noopener">Eric
+                    B.</a>'s <a
+                    href="https://www.yelp.com/biz/nile-ethiopian-restaurant-jacksonville?hrid=ps77VjeVyPgTBsmDXX5e2Q"
+                    rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/aqDnF1bT-DO6BA9UHswqog"
+                    rel="nofollow noopener">Nile Ethiopian Restaurant</a> on <a href="https://www.yelp.com"
+                    rel="nofollow noopener">Yelp</a>
+                <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+            </span><br>
+            <span class="yelp-review" data-review-id="rUgUD7E1UJgccTTlBGz3-w" data-hostname="www.yelp.com">Read <a
+                    href="https://www.yelp.com/user_details?userid=Ngxqf4IUe_telPxnm1Z2cw"
+                    rel="nofollow noopener">Jessica F.</a>'s <a
+                    href="https://www.yelp.com/biz/nile-ethiopian-restaurant-jacksonville?hrid=rUgUD7E1UJgccTTlBGz3-w"
+                    rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/aqDnF1bT-DO6BA9UHswqog"
+                    rel="nofollow noopener">Nile Ethiopian Restaurant</a> on <a href="https://www.yelp.com"
+                    rel="nofollow noopener">Yelp</a>
+                <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+            </span><br>
+            <span class="yelp-review" data-review-id="xYQ2TcdR1pauZkIGbxARlQ" data-hostname="www.yelp.com">Read <a
+                    href="https://www.yelp.com/user_details?userid=Ow5tTx_MpLoYt8IvkXUaCg"
+                    rel="nofollow noopener">Daniel H.</a>'s <a
+                    href="https://www.yelp.com/biz/nile-ethiopian-restaurant-jacksonville?hrid=xYQ2TcdR1pauZkIGbxARlQ"
+                    rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/aqDnF1bT-DO6BA9UHswqog"
+                    rel="nofollow noopener">Nile Ethiopian Restaurant</a> on <a href="https://www.yelp.com"
+                    rel="nofollow noopener">Yelp</a>
+                <script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+            </span>
+        </div>
+    </div>
+
+    <!--************************************************************  End  Reviews *************************************************************-->
+
+
+    <!--**************************************************************** Footer ****************************************************************-->
+    <div class="foot-container" id="c3">
+        <div class="foot1">
+            <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2020, Nile Ethiopian Restaurant</p>
+        </div>
+        <div class="foot2">
+            <p><a
+                    href="https://www.google.com/maps/place/Nile+Ethiopian+Restaurant/@30.252714,-81.615042,15z/data=!4m5!3m4!1s0x0:0x81558276a01bcb12!8m2!3d30.252714!4d-81.615042">6715
+                    Powers Ave #3, Jacksonville, FL 32217</a></p>
+        </div>
+        <div class="foot3">
+            <p><a href="http://portfolio.yamiet08.webfactional.com">Design By Yamrote Yilma</a></p>
+        </div>
+    </div>
+
+    <!--*************************************************************** End Footer *************************************************************-->
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

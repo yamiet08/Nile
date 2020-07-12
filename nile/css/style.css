@@ -1,0 +1,1520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 100%;
+    text-decoration: none;
+    line-height: 1.5;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+img {
+    image-rendering: crisp-edges;
+    vertical-align: middle;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/************************************************************* Button *******************************************************/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px;
+    font-size: 18px;
+    opacity: .8;
+}
+
+#myBtn:hover {
+    background-color: rgb(248, 0, 0);
+}
+
+/************************************************************* Navigation *******************************************************/
+.topnav {
+    background-color: #000000;
+    color: #0aaac9;
+    width: 100%;
+    margin: auto;
+}
+
+.topnav .logo {
+    padding-left: 30px;
+}
+
+label.logo #p01 {
+    font-size: 40px;
+}
+
+.topnav ul.noDrop {
+    float: right;
+    list-style-type: none;
+}
+
+.topnav ul li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 30px 0px 30px;
+}
+
+.topnav ul li a {
+    text-transform: capitalize;
+    color: #0aaac9;
+    font-size: 28px;
+}
+
+.topnav li a:hover {
+    background-color: rgb(252, 227, 7);
+    transition: .5s;
+    color: #0aaac9;
+}
+
+.secondmenu {
+    display: none !important;
+}
+
+.icon {
+    display: none;
+}
+
+/************************************************************** Image gallery *********************************************************/
+.slideshowContainer {
+    position: relative;
+    overflow: hidden;
+    margin: 50px 0 75px;
+    width: 100%;
+    height: 500px;
+}
+
+.imageSlides {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+
+/* add 'visible' class via Javascript */
+.visible {
+    opacity: 1;
+}
+
+.slideshowArrow {
+    font-size: 7em;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.slideshowArrow:hover {
+    opacity: 0.75;
+}
+
+#leftArrow {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#rightArrow {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+.slideshowCircles {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.circle {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    transition: 1s ease-in-out;
+}
+
+.dot {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 2px rgba(255, 255, 255, 0.5);
+}
+
+/**************************************************************** Featured items ***********************************************************/
+.contain {
+    width: 100%;
+}
+
+.menu-div {
+    background-color: #000000;
+    border: 1px solid rgb(0, 0, 0, 0.8);
+    padding-top: 60px;
+    line-height: 1.5;
+    font-family: 'Kaushan Script', cursive;
+    color: #fce307;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+.nav-link2 a {
+    font-size: 40px;
+    color: rgb(252, 227, 7);
+    font-family: 'Kaushan Script', cursive;
+}
+
+.nav-link2 a:hover {
+    background-color: rgb(252, 227, 7);
+    transition: .5s;
+    color: #000000;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.menu-div2 {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-div2 img {
+    image-rendering: pixelated;
+    vertical-align: middle;
+}
+
+.menu-div3 {
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+}
+
+.menu-div4 {
+    width: 33.3%;
+    float: left;
+    padding: 20px;
+}
+
+.menu-div5 {
+    width: 33.3%;
+    float: right;
+    padding: 20px;
+}
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+    width: 375px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.8);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.nav-link a {
+    text-transform: capitalize;
+    color: rgb(252, 227, 7);
+    font-size: 28px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.nav-link a:hover {
+    background-color: rgb(252, 227, 7);
+    transition: .5s;
+    color: #000000;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/****************************************************************  Menu ***************************************************************/
+.horizontal-scroll-wrapper {
+    display: none;
+}
+
+.title {
+    display: none;
+}
+
+.contain2 {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 60px 0px 0px 0px;
+    display: inline-block;
+}
+
+.contain2 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+}
+
+.menu-div6 {
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+
+.menu-div6 h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+}
+
+.menu-div6 h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'Fondamento', cursive;
+}
+
+.menu-div6 p {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Fondamento', cursive;
+}
+
+.menu-div7 {
+    width: 50%;
+    float: left;
+    padding: 30px;
+}
+
+.menu-div7 h2 {
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+}
+
+.menu-div7 h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: 'Fondamento', cursive;
+}
+
+.menu-div7 p {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Fondamento', cursive;
+}
+
+.contain4 {
+    width: 50%;
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+
+.contain5 {
+    width: 50%;
+    float: left;
+    padding: 30px;
+    text-align: center;
+}
+
+/********************************************************** Parrallax *********************************************************/
+.content {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-clip-path: border-box;
+    clip-path: border-box;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    background-image: linear-gradient(90deg, #000000, #352831, #000000);
+}
+
+.block {
+    position: relative;
+    height: 100vh;
+}
+
+[class*='item-parallax'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    will-change: transform;
+}
+
+.item-parallax-media {
+    z-index: 1;
+}
+
+.item-parallax-media img {
+    will-change: transform;
+}
+
+.item-parallax-content {
+    z-index: 2;
+}
+
+.block:nth-child(1) .item-parallax-content {
+    -webkit-transform: translateY(calc(var(--yBlock-1) * 0.5px));
+    transform: translateY(calc(var(--yBlock-1) * 0.5px));
+}
+
+.block:nth-child(1) .item-parallax-media img {
+    -webkit-transform: translateY(calc(var(--yBlock-1) * 0.1px));
+    transform: translateY(calc(var(--yBlock-1) * 0.1px));
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: flex;
+}
+
+.centered-content {
+    margin: auto;
+}
+
+.head-large {
+    margin-bottom: 5vw;
+    font-size: 11vw;
+    font-weight: 900;
+    line-height: 1.2em;
+    font-family: 'Inknut Antiqua', serif;
+    color: white;
+}
+
+.head-centered {
+    text-align: center;
+}
+
+.item-parallax-media {
+    overflow: hidden;
+}
+
+.item-parallax-media img {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.section-landing:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    width: 10px;
+    height: 80%;
+    background-color: white;
+    z-index: 3;
+    -webkit-transform: translateY(-13vw);
+    transform: translateY(-13vw);
+}
+
+.section-landing .item-parallax-media {
+    opacity: calc(1 - (var(--y) * 0.0009));
+}
+
+.landing-content {
+    padding-left: 30%;
+}
+
+/**************************************************************** Reviews ***********************************************************/
+.reviews {
+    width: 100%;
+    height: 1100px;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+}
+
+.text-sec {
+    width: 50%;
+    float: left;
+    height: 1100px;
+    text-align: center;
+    padding: 100px 10px 0px 10px;
+    line-height: 1.5;
+}
+
+.text-sec h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 44px;
+}
+
+.text-sec h2 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 30px;
+}
+
+.text-sec p {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 22px;
+}
+
+.text-sec p a img {
+    height: 100px;
+    width: 100px;
+}
+
+.critic-sec {
+    width: 50%;
+    float: left;
+    height: 1100px;
+    border-left: 1px dashed grey;
+    text-align: center;
+    padding: 108px 10px 0px 10px;
+    line-height: 1.5;
+}
+
+.critic-sec h1 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 34px;
+}
+
+/**************************************************************** footer ***********************************************************/
+.foot-container {
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+}
+
+.foot1 {
+    width: 33.3%;
+    float: left;
+    padding-top: 50px;
+}
+
+.foot1 p {
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    padding-left: 30px;
+}
+
+.foot2 {
+    width: 33.3%;
+    float: left;
+    padding-top: 50px;
+}
+
+.foot2 p {
+    text-align: center;
+}
+
+.foot2 p a {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+.foot3 {
+    width: 33.3%;
+    float: right;
+    padding-top: 50px;
+}
+
+.foot3 p {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.foot3 p a {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+
+/**************************************************************** Responsive section ***********************************************************/
+
+
+/* For typical mobile devices */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    /*********************************************************** Navigation Responsive *******************************************************/
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 250px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 0px;
+        font-size: 18px;
+        opacity: .8;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(248, 0, 0);
+    }
+
+    .topnav .logo {
+        padding: 0px;
+    }
+
+    label.logo #p01 {
+        font-size: 28px;
+    }
+
+    .topnav ul.noDrop {
+        display: none;
+        list-style-type: none;
+    }
+
+    .topnav ul li {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .topnav li a:hover {
+        background-color: rgb(252, 227, 7);
+        transition: .5s;
+        color: #0aaac9;
+    }
+
+    .firstmenu {
+        display: none !important;
+    }
+
+    .secondmenu {
+        display: block !important;
+    }
+
+    .icon {
+        display: block;
+        float: right;
+        font-size: 28px;
+        margin: 8px 8px 0px 0px;
+    }
+
+    /********************************************************** Featured items Responsive *****************************************************/
+    .menu-div3 {
+        width: 100%;
+    }
+
+    .menu-div3 img {
+        padding-bottom: 10px;
+    }
+
+    .menu-div4 {
+        width: 100%;
+    }
+
+    .menu-div4 img {
+        padding-bottom: 10px;
+    }
+
+    .menu-div5 {
+        width: 100%;
+    }
+
+    .menu-div5 img {
+        padding-bottom: 10px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        /* Animation */
+        width: 280px;
+        height: 275px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .zoom:hover {
+        transform: scale(1.1);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    /*********************************************************** Menu Responsive *******************************************************/
+    .contain2 {
+        display: none;
+    }
+
+    .title {
+        display: block;
+        padding: 30px;
+        height: 100px;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    .title h1 {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .right-paddle {
+        float: right;
+        font-size: 50px;
+        color: #352831;
+        opacity: .2;
+    }
+
+    #box {
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    .horizontal-scroll-wrapper {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        height: auto;
+        width: 10000px;
+    }
+
+    .horizontal-scroll-wrapper>div {
+        width: 400px;
+        padding: 0px 20px 20px 20px;
+        text-align: center;
+    }
+
+    .horizontal-scroll-wrapper h1 {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .horizontal-scroll-wrapper h2 {
+        font-size: 32px;
+        text-transform: capitalize;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .horizontal-scroll-wrapper h3 {
+        font-size: 22px;
+        text-transform: capitalize;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .horizontal-scroll-wrapper p {
+        font-size: 16px;
+        text-transform: capitalize;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .horizontal-scroll-wrapper #combinations {
+        font-size: 28px;
+        text-transform: capitalize;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .horizontal-scroll-wrapper #ethiopian {
+        font-size: 28px;
+        text-transform: capitalize;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    /************************************************************ Reviews Responsive *****************************************************/
+    .reviews {
+        width: 100%;
+        height: 2270px;
+        margin: 0px;
+        padding: 0px;
+        background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+    }
+
+    .text-sec {
+        width: 100%;
+        height: 950px;
+        text-align: center;
+        padding: 100px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    .text-sec p a img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .critic-sec {
+        width: 100%;
+        height: 1320px;
+        border-left: 1px dashed grey;
+        text-align: center;
+        padding: 108px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    /*********************************************************** footer responsive ***********************************************************/
+    .foot-container {
+        width: 100%;
+        height: 240px;
+        background-color: #000000;
+    }
+
+    .foot1 {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .foot1 p {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .foot2 {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .foot2 p {
+        text-align: center;
+    }
+
+    .foot2 p a {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .foot3 {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .foot3 p {
+        text-align: center;
+    }
+
+    .foot3 p a {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+}
+
+/*=============================================================== For mobile (landscape) ====================================================*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    /*********************************************************** Navigation Responsive *******************************************************/
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 190px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 0px;
+        font-size: 18px;
+        opacity: .8;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(248, 0, 0);
+    }
+
+    .topnav .logo {
+        padding: 0px;
+    }
+
+    label.logo #p01 {
+        font-size: 35px;
+    }
+
+    .topnav ul.noDrop {
+        display: none;
+        list-style-type: none;
+    }
+
+    .topnav ul li {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+
+    .icon {
+        display: block;
+        float: right;
+        font-size: 28px;
+        margin: 13px 15px 0px 0px;
+    }
+
+    /********************************************************** Featured items Responsive *****************************************************/
+    .menu-div3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div3 img {
+        padding: 25px;
+    }
+
+    .menu-div4 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div4 img {
+        padding: 25px;
+    }
+
+    .menu-div5 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div5 img {
+        padding: 25px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        /* Animation */
+        width: 400px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        transform: scale(1.3);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    /*********************************************************** Menu Responsive *******************************************************/
+    .contain2 {
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 60px 0px 0px 0px;
+        display: inline-block;
+        height: 460px;
+        overflow: scroll;
+    }
+
+    #combinations {
+        font-size: 24px;
+        text-transform: capitalize;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .menu-div7 #ethiopian {
+        font-size: 28px;
+        text-transform: capitalize;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Fondamento', cursive;
+    }
+
+    .contain4 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .contain5 {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    /************************************************************ Reviews Responsive *****************************************************/
+    .reviews {
+        width: 100%;
+        height: 2200px;
+        margin: 0px;
+        padding: 0px;
+        background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+    }
+
+    .text-sec {
+        width: 100%;
+        height: 1000px;
+        text-align: center;
+        padding: 100px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    .text-sec p a img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .critic-sec {
+        width: 100%;
+        height: 1200px;
+        border-left: 1px dashed grey;
+        text-align: center;
+        padding: 108px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    /*********************************************************** footer responsive ***********************************************************/
+    .foot-container {
+        width: 100%;
+        height: 180px;
+        background-color: #000000;
+    }
+
+    .foot1 {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .foot1 p {
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .foot2 {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .foot2 p {
+        text-align: center;
+    }
+
+    .foot2 p a {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .foot3 {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .foot3 p {
+        text-align: center;
+    }
+
+    .foot3 p a {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+}
+
+/*================================================================ For tablet =============================================================== */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+    /*********************************************************** Navigation Responsive *******************************************************/
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 110px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 0px;
+        font-size: 18px;
+        opacity: .8;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(248, 0, 0);
+    }
+
+    .topnav ul.noDrop {
+        display: none;
+        list-style-type: none;
+    }
+
+    .topnav ul li {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+
+    .icon {
+        display: block;
+        float: right;
+        font-size: 38px;
+        margin: 15px 15px 0px 0px;
+    }
+
+    /********************************************************** Featured items Responsive *****************************************************/
+    .menu-div3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div3 img {
+        padding: 25px;
+    }
+
+    .menu-div4 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div4 img {
+        padding: 25px;
+    }
+
+    .menu-div5 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div5 img {
+        padding: 25px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        /* Animation */
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        transform: scale(1.3);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    /************************************************************ Menu Responsive *****************************************************/
+    .contain2 {
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 60px 0px 0px 0px;
+        display: inline-block;
+        height: 530px;
+        overflow: scroll;
+    }
+
+    /************************************************************ Reviews Responsive *****************************************************/
+    .reviews {
+        width: 100%;
+        height: 2150px;
+        margin: 0px;
+        padding: 0px;
+        background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+    }
+
+    .text-sec {
+        width: 100%;
+        height: 1000px;
+        text-align: center;
+        padding: 100px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    .text-sec h1 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 54px;
+    }
+
+    .text-sec h2 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 50px;
+    }
+
+    .text-sec p {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 30px;
+    }
+
+    .text-sec p a img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .critic-sec {
+        width: 100%;
+        height: 1150px;
+        border-left: 1px dashed grey;
+        text-align: center;
+        padding: 108px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    /*********************************************************** footer responsive ***********************************************************/
+    .foot1 {
+        width: 33.3%;
+        float: left;
+        padding-top: 55px;
+    }
+
+    .foot1 p {
+        font-size: 11px;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+        padding-left: 30px;
+    }
+
+    .foot2 p {
+        text-align: right;
+    }
+
+    .foot2 p a {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+
+    .foot3 p a {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        color: #FFFFFF;
+    }
+}
+
+/*================================================================== For small desktop ======================================================= */
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+
+    /*********************************************************** Navigation Responsive *******************************************************/
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 110px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 0px;
+        font-size: 18px;
+        opacity: .8;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(248, 0, 0);
+    }
+
+    label.logo #p01 {
+        font-size: 40px;
+    }
+
+    .topnav ul.noDrop {
+        display: none;
+        list-style-type: none;
+    }
+
+    .topnav ul li {
+        display: block;
+        text-align: center;
+        margin: 0px;
+        padding: 5px 0px;
+    }
+
+    .topnav ul li a {
+        text-transform: capitalize;
+        color: #0aaac9;
+        font-size: 32px;
+    }
+
+    .icon {
+        display: block;
+        float: right;
+        font-size: 38px;
+        margin: 15px 15px 0px 0px;
+    }
+
+    /********************************************************** Featured items Responsive *****************************************************/
+    .menu-div3 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-link2 a {
+        font-size: 50px;
+        color: rgb(252, 227, 7);
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .nav-link a {
+        text-transform: capitalize;
+        color: rgb(252, 227, 7);
+        font-size: 38px;
+        font-family: 'Kaushan Script', cursive;
+    }
+
+    .menu-div3 img {
+        padding: 25px 25px 60px 25px;
+    }
+
+    .menu-div4 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div4 img {
+        padding: 50px 25px 60px 25px;
+    }
+
+    .menu-div5 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .menu-div5 img {
+        padding: 50px 25px 60px 25px;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        /* Animation */
+        width: 790px;
+        height: 600px;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        transform: scale(1.3);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    /*********************************************************** Menu Responsive *******************************************************/
+    .contain2 {
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 60px 0px 0px 0px;
+        display: inline-block;
+        height: 570px;
+        overflow: scroll;
+    }
+
+    /************************************************************ Reviews Responsive *****************************************************/
+    .reviews {
+        width: 100%;
+        height: 2080px;
+        margin: 0px;
+        padding: 0px;
+        background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+    }
+
+    .text-sec {
+        width: 100%;
+        height: 1000px;
+        text-align: center;
+        padding: 100px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    .text-sec h1 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 54px;
+    }
+
+    .text-sec h2 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 50px;
+    }
+
+    .text-sec p {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 30px;
+    }
+
+    .text-sec p a img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .critic-sec {
+        width: 100%;
+        height: 1080px;
+        border-left: 1px dashed grey;
+        text-align: center;
+        padding: 108px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    /*********************************************************** footer responsive ***********************************************************/
+    .foot2 p {
+        text-align: right;
+    }
+}
+
+/*====================================================================For typical desktop ===================================================*/
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+
+    /*********************************************************** Navigation Responsive *******************************************************/
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 130px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 0px;
+        font-size: 18px;
+        opacity: .8;
+    }
+
+    #myBtn:hover {
+        background-color: rgb(248, 0, 0);
+    }
+
+    .topnav ul li {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 14px 0px 14px;
+    }
+
+    /********************************************************** Featured items Responsive *****************************************************/
+    .menu-div2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .zoom {
+        transition: transform .2s;
+        /* Animation */
+        width: 320px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        transform: scale(1.6);
+        /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+    /*********************************************************** Menu Responsive *******************************************************/
+    .contain2 {
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 60px 0px 0px 0px;
+        display: inline-block;
+        height: 580px;
+        overflow: scroll;
+    }
+
+    /************************************************************ Reviews Responsive *****************************************************/
+    .reviews {
+        width: 100%;
+        height: 1200px;
+        margin: 0px;
+        padding: 0px;
+        background-image: linear-gradient(90deg, rgb(250, 250, 250), rgb(250, 250, 250), rgb(250, 250, 250));
+    }
+
+    .text-sec {
+        width: 50%;
+        float: left;
+        height: 1200px;
+        text-align: center;
+        padding: 100px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    .text-sec h1 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 44px;
+    }
+
+    .text-sec h2 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 30px;
+    }
+
+    .text-sec p {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 22px;
+    }
+
+    .text-sec p a img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .critic-sec {
+        width: 50%;
+        float: left;
+        height: 1200px;
+        border-left: 1px dashed grey;
+        text-align: center;
+        padding: 108px 10px 0px 10px;
+        line-height: 1.5;
+    }
+
+    .critic-sec h1 {
+        font-family: 'Inknut Antiqua', serif;
+        font-size: 34px;
+    }
+
+    /*********************************************************** footer responsive ***********************************************************/
+    .foot2 p {
+        text-align: right;
+    }
+}
+
+/*=================================================== For large desktop ====================================================================*/
+@media only screen and (min-width: 1200px) {}
